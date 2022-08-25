@@ -51,7 +51,7 @@ body {
 
 /*Background Image*/
 .main {
-	background: url(../images/myProfile2.png);
+	background: url(./images/myProfile2.png);
 	width: 100%;
 	height: 100vh;
 	background-size: cover;

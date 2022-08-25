@@ -1,0 +1,92 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #0A192F ;
+}
+
+/*Header navbar*/
+.navbar {
+	/*background-color: rgba(243, 243, 245, 0.925);*/
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	padding: 1.5rem 3rem;
+	/*border: 0.0625rem solid #E5E7EB ;*/ /*border or navbar*/
+}
+
+/*Logo*/
+.navbar-brand {
+	padding: 0;
+	margin: 0;
+}
+
+.navbar-brand img{
+	width: 2.8125rem; 
+}
+
+/*Navbar Items*/
+.nav-item a {
+	padding: 0.8rem 1.5rem!important;
+	color: #CCD6F6;
+	font-weight: 400;
+	transition: all 0.3s ease 0s;
+}
+
+/*Contact Me Button*/
+.navbar-nav button {
+	padding: 0.75rem 1rem;
+	border: 0.125rem solid #64FFDA;
+	border-radius: 1.5rem;
+	background-color: transparent;
+	font-weight: 500;
+	font-size: 0.9rem;
+	color: #64FFDA;
+	text-transform: uppercase;
+}
+
+/*Background Image*/
+.main {
+	background: url(../images/myProfile2.png);
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*Main Content*/
+.main .mainContent {
+	height: 100vh;
+}
+
+.content h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.3rem;
+	font-weight: 800;
+	letter-spacing:0.125rem;
+	color: #64FFDA;
+	margin: 0;
+	font-weight: 400;
+}
+
+.content h1 {
+	font-family: 'Inter', sans-serif;
+	font-size: 5.5rem;
+	font-weight: 800;
+	color: #CCD6F6;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.content h1 + h2 {
+	color: #8892B0;
+	font-weight: 800;
+	font-size: 1.3rem;
+}
+
+

@@ -13,56 +13,364 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Animated on Scroll Library-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="icon" type="image/x-icon" href="./images/myLogo.png">
 
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg container-fluid">
+      <a class="navbar-brand" href="#main" data-aos="fade-down" data-aos-duration="500">
         <img src="./images/myLogo.png">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="dark-blue-text"><i class="fas fa-bars fa-1x"></i></span></button></span>
       </button>
 
       <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto text-center">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#main">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Project</a>
+            <a class="nav-link" href="#myProject">Project</a>
           </li>
         </ul>
-        <a class="navbar-nav ml-auto">  
-            <button class="btn" type="submit">Contact Me</button>
+        <a href="#contact" class="navbar-nav ml-auto text-center">  
+          <button>Contact Me&nbsp;&nbsp;<i class="fa-solid fa-phone-flip"></i></button>
         </a> 
       </div>
     </nav>
   </header>
-  <section class="main">
+
+  <section id="main">
     <div class="container-fluid">
       <div class="mainContent row justify-content-center align-items-center">
-        <div class="content col-md-7 col-12">
-          <h2>&nbsp;Hi, my name is</h1>
-          <h1>Lexus Hufano</h1>
-          <h2>an aspiring Full-Stack Developer.</h1>
+        <div class="content col-lg-8 col-12">
+          <h2 data-aos="fade-up" data-aos-delay="500">&nbsp;Hi, my name is</h1>
+          <h1 data-aos="fade-up" data-aos-delay="600">Lexus Hufano</h1>
+          <h2 data-aos="fade-up" data-aos-delay="700">An aspiring Full-Stack Developer.</h1>
+          <a href="#myProject"><button data-aos="fade-up" data-aos-delay="800">view my projects&nbsp;&nbsp;<i class="fa-solid fa-arrow-down-long"></i></button></a>
         </div>
       </div> 
     </div>
   </section>
-     
+
+  <!-- About me End -->
+  <section id="about" class="container-fluid">
+    <div class="row justify-content-center align-items-center text-center">
+      <div class="col-12">
+        <h1 data-aos="fade-up" data-aos-delay="100">About me</h1>
+        <h2 data-aos="fade-up" data-aos-delay="200">Who is Lexus?</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+      <div class="col-12 col-md-10 d-lg-none order-1">
+        <img class="img-fluid" src="./images/myProfile3.png" alt="">
+      </div>
+      <div class="aboutMe col-12 col-md-10 col-lg-6 order-2">
+        <div class="text-justify">
+          <p>
+            Hello! My name is Lexus Hufano an Computer Engineer Graduate who has an interest in Web Development, i have been Sales Representative in a computer retailer company for 3 years wherein it specializes customer service and sales. In my 3 years of experience, im able to meet and reach my goals in sales which made me to become one of the team leader on our team.
+          </p>
+          <p>
+            As a team leader, I'm able to help my colleagues on reaching their target sales by teaching them some of proper techniques on how to sell or introduce the product to the customer, and also I was able to guide my team mates how to handle professionally customer queries and customer problems. I've learned alot about great deals in customer service/sales industry which i will gladly share with your company if i will be given a chance.
+          </p>
+          <p>
+            Currently, I'm seeking for an opportunity where I can implement and further my skills simultaneously.
+          </p>
+        </div>
+      </div>
+    </div> 
+  </section>
+  <!-- About me End -->
+
+  <!-- Tools start -->
+  <section class="tools container-fluid">
+    <div class="row justify-content-center align-items-center text-center">
+      <div class="col-lg-8 col-md-10 col-12">
+        <div class="row justify-content-center align-items-center text-center">
+          <div class="col-12">
+            <h1 data-aos="fade-up" data-aos-delay="100">Tools</h1>
+            <h2 data-aos="fade-up" data-aos-delay="200">List of skills, tools, and tech stacks I use</h2>
+          </div>
+        </div>
+
+        <!-- Tools Section Start -->
+        <div class="row justify-content-center align-items-center text-center">
+          <div class="skills col-lg-2 col-md-4 col-6" data-aos="zoom-out" data-aos-delay="300">
+            <img class="img-fluid" src="images/logo-html5.png"/>
+            <p>HTML</p>
+          </div>
+          <div class="skills col-lg-2 col-md-4 col-6" data-aos="zoom-out" data-aos-delay="300">
+            <img class="img-fluid"src="images/logo-css3.png"/>
+            <p>CSS</p>
+          </div>
+          <div class="skills col-lg-2 col-md-4 col-6" data-aos="zoom-out" data-aos-delay="300">
+            <img class="img-fluid"src="images/logo-javascript.png"/>
+            <p>JavaScript</p>
+          </div>
+          <div class="skills col-lg-2 col-md-4 col-6" data-aos="zoom-out" data-aos-delay="300">
+            <img class="img-fluid"src="images/logo-mongodb.png"/>
+            <p>MongoDB</p>
+          </div>
+          <div class="skills col-lg-2 col-md-4 col-6" data-aos="zoom-out" data-aos-delay="300">
+            <img class="img-fluid"src="images/logo-nodejs.png"/>
+            <p>Node.js</p>
+          </div>
+          <div class="skills col-lg-2 col-md-4 col-6" data-aos="zoom-out" data-aos-delay="300">
+            <img class="img-fluid"src="images/logo-expressjs.png"/>
+            <p>Express.js</p>
+          </div>  
+          <div class="skills col-lg-2 col-md-4 col-6" data-aos="zoom-out" data-aos-delay="300">
+            <img class="img-fluid"src="images/logo-react.png"/>
+            <p>React</p>
+          </div> 
+          <div class="skills col-lg-2 col-md-4 col-6" data-aos="zoom-out" data-aos-delay="300">
+            <img class="img-fluid"src="images/logo-heroku.png"/>
+            <p>Heroku</p>
+          </div> 
+          <div class="skills col-lg-2 col-md-4 col-6" data-aos="zoom-out" data-aos-delay="300">
+            <img class="img-fluid"src="images/logo-git.png"/>
+            <p>Git</p>
+          </div> 
+          <div class="skills col-lg-2 col-md-4 col-6" data-aos="zoom-out" data-aos-delay="300">
+            <img class="img-fluid"src="images/logo-sublime-text-3.png"/>
+            <p>Sublime Text</p>
+          </div>
+          <div class="skills col-lg-2 col-md-4 col-6" data-aos="zoom-out" data-aos-delay="300">
+            <img class="img-fluid"src="images/logo-postman.png"/>
+            <p>Postman</p>
+          </div> 
+          <div class="skills col-lg-2 col-md-4 col-6" data-aos="zoom-out" data-aos-delay="300">
+            <img class="img-fluid"src="images/logo-gitlab-ci-cd.png"/>
+            <p>GitLab</p>
+          </div>   
+        </div>
+        <!-- Tools Section End -->
+      </div>
+    </div>
+    
+  </section>
+  <!-- Tools end -->
+
+  <!-- My projects -->
+  <section id="myProject" class="project container-fluid">
+    <div class="row justify-content-center align-items-center text-center">
+      <div class="col-12">
+        <h1 data-aos="fade-up" data-aos-delay="100">Projects</h1>
+        <h2 data-aos="fade-up" data-aos-delay="200">My projects I have worked on</h2>
+      </div>
+    </div>
+    <!-- Project 1 start -->
+    <div class="project1 row justify-content-center align-items-center">
+        <div class="col-12 col-md-10 col-lg-4 order-lg-1 order-2" data-aos="fade-right" data-aos-delay="500">
+            <h3 class="pt-4">My Portfolio</h3>
+            <p class="p-4">
+                This web-based portfolio was built using HTML, CSS and Bootstrap to ensure responsiveness of the design on various screen sizes.
+            </p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+            </ul>
+        </div>
+        <div class="col-12 col-md-10 col-lg-4 order-lg-2 order-1" data-aos="fade-left" data-aos-delay="500">
+            <img class="img-fluid" src="./images/project1.png"/>
+        </div>
+    </div>
+    <!-- Project 1 End -->
+
+    <!-- Project 3 Start -->
+    <div class="project3 row justify-content-center align-items-center text-right" data-aos="fade-left" data-aos-delay="500">
+        <div class="col-12 col-md-10 col-lg-4 order-lg-2 order-2">
+            <h3 class="pt-4">Development - React Application Frontend</h3>
+            <p class="p-4">
+              This project has been developed using React Hooks, Context API and React Router. The Routes were set up for four default pages and a search page. Also, the images were displayed using the Flickr API and Axios to fetch data as given in the description of repository. 
+            </p>
+            <ul>
+              <li>React</li>
+            </ul>
+        </div>
+        <div class="col-12 col-md-10 col-lg-4 order-lg-1 order-1" data-aos="fade-right" data-aos-delay="500">
+            <img class="img-fluid" src="./images/project3.jpg"/>
+        </div>
+    </div>
+    <!-- Project 3 End -->
+
+    <!-- Project 2 Start -->
+    <div class="project2 row justify-content-center align-items-center">
+        <div class="col-12 col-md-10 col-lg-4 order-lg-1 order-2" data-aos="fade-right" data-aos-delay="500">
+            <h3 class="pt-4">Development - Ecommerce API</h3>
+            <p class="p-4">
+              An e-commerce website built using React and Typescript, where we can filter clothes products using their customer preferred sizes as M, L or XL etc. We have a button called “Add to cart” below each product shown on the web page, once user selects any product, it will go to cart. At the end it can be used to checkout.
+            </p>
+            <ul>
+              <li>JavaScript</li>
+              <li>MongoDB</li>
+              <li>Node.js</li>
+              <li>Express.js</li>
+            </ul>
+        </div>
+        <div class="col-12 col-md-10 col-lg-4 order-lg-2 order-1" data-aos="fade-left" data-aos-delay="500">
+            <img class="img-fluid" src="./images/project2.jpg"/>
+        </div>
+    </div>
+    <!-- Project 2 End -->
+
+  </section>
+  <!-- My projects end -->
   
-  
+  <section id="contact" class="container-fluid">
+    <div class="row justify-content-center align-items-center text-center">
+      <div class="col-12">
+        <h1 data-aos="fade-up" data-aos-delay="400">Contact</h1>
+        <h3 data-aos="fade-up" data-aos-delay="500">Message me and I'll get back to you as soon as I can.</h3>
+      </div>
+    </div>
+
+    <!-- Forms Start-->
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-10 col-12" data-aos="zoom-in" data-aos-delay="600">
+        <div class="pb-md-5">
+          <h2>Wanna Talk?</h2>
+          <p>
+            Whether you have a question or want to work together?
+            my inbox is always open.
+          </p>
+        </div>
+        <div class="pb-md-5">
+          <h2>My contacts</h2>
+          <p><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;lexushufano121097@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;+63 969 206 3705</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-10 col-12" data-aos="zoom-in" data-aos-delay="700">
+        <form action="" class="container-fluid">
+          <div class="form-row justify-content-center align-items-center">
+            <!-- First Name (text input) -->
+            <div class="form-group col-lg-6 col-12">
+              <label for="firstName">First Name&nbsp;*</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+            </div>
+
+            <!-- Last Name (text input) -->
+            <div class="form-group col-lg-6 col-12">
+              <label for="lastName">Last Name&nbsp;*</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+            </div>
+
+            <!-- Email Address (email input) -->
+            <div class="form-group col-12">
+              <label for="yourEmail">Email Address&nbsp;*</label>
+              <input type="email" class="form-control" id="yourEmail" placeholder="Enter your last email" required>
+            </div>
+
+            <!-- Message (textarea) -->
+            <div class="form-group col-12">
+                <label for="yourMessage">Message&nbsp;*</label>
+                <textarea class="form-control" id="yourMessage" placeholder="Enter your message here" rows="10" required></textarea>
+            </div>
+            
+            <button type="submit" class="ml-auto" data-toggle="modal" data-target="#sendEmail">Submit&nbsp;&nbsp;<i class="fa-solid fa-paper-plane"></i></button>
+            
+            
+
+            <!-- <div class="modal fade text-dark" id="sendEmail" tabindex="-1" aria-labelledby="sendEmailLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="sendEmailLabel">Thank you for contacting us!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Message Successfully Sent
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Form End-->
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="container-fluid">
+    <!-- Footer Elements -->
+    <div class="row justify-content-center align-items-center text-center">
+      <div class="col-8">
+        <div class="row justify-content-center align-items-center text-center">
+          <div class="col-12 py-4 px-4">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/LexusHufano121097/" target="_blank"><i class="fa-brands fa-facebook fa-2xl px-2" ></i></a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/lexus-hufano-25931a249/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl px-2" ></i></a>
+            <!-- Github +-->
+            <a href="https://github.com/LexusHufano" target="_blank"><i class="fa-brands fa-github fa-2xl px-2" > </i></a>
+            <!--GitLab -->
+            <a href="https://gitlab.com/lexusHufano" target="_blank"><i class="fa-brands fa-gitlab fa-2xl px-2" > </i></a>
+          </div>
+          <!-- Copyright -->
+          <div class="footer-copyright col-12">
+            <p>Copyright © 2022 Lexus Hufano. All rights reserved.</p>
+          </div>
+          <!-- Copyright -->
+        </div>
+      </div>
+    </div>
+    <!-- Footer Elements -->
+  </footer>
+  <!-- Footer -->
+
 
   <!-- JavaScript Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
   
+  <script>
+    const nav = document.querySelector('nav');
+    let prevScrollpos = window.pageYOffset;
+
+    window.addEventListener('scroll', ()=>{
+      let currentScroolPos = window.pageYOffset;
+
+      if(prevScrollpos < currentScroolPos){
+        nav.classList.add('hide');
+      }else {
+        nav.classList.remove('hide');
+      }
+
+      prevScrollpos = currentScroolPos;
+    })
+  </script>
+
+  <!-- Animated on Scroll Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+  AOS.init({
+    duration: 1200
+  });
+  </script>
+
+
 </body>
 </html>

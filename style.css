@@ -21,7 +21,6 @@ body {
 	padding: 1rem 3.5rem;
 	box-shadow: 0 1px 15px rgba(2,12,27,0.7);
 	transition: all 0.5s ease 0s;
-	overflow-x: hidden
 }
 
 /*Toggler*/
@@ -53,6 +52,7 @@ nav.hide{
 .navbar-brand {
 	padding: 0;
 	margin: 0 6.25rem 0 0; /*margin right 100px*/
+	overflow-x: hidden;
 }
 
 .navbar-brand img{
@@ -60,6 +60,10 @@ nav.hide{
 }
 
 /*Navbar Items*/
+.collapse {
+	overflow-x: hidden;
+}
+
 .collapse .navbar-nav .nav-item a {
 	padding: 0.8rem 1.5rem;
 	color: #CCD6F6;
@@ -105,7 +109,7 @@ nav.hide{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	overflow-x: hidden
+	overflow-x: hidden;
 }
 
 /*Main Content*/
@@ -193,6 +197,7 @@ nav.hide{
 
 }
 /*Tools section*/
+
 .tools h1 {
 	font-family: 'Inter', sans-serif;
 	padding-top: 5rem;
@@ -448,6 +453,7 @@ input[type=text], input[type=email] {
 
 #footer	i:hover {
 	transform: scale(1.3);
+	color: #64FFDA;
 }
 
 .footer-copyright p {
